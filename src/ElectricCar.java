@@ -41,6 +41,6 @@ public class ElectricCar extends ACar {
 
     @Override
     public String toString() {
-        return "The information about the car you get is: " + getMake() + getModel() + getRegistrationNumber() + getNumberOfDoors() + getWhPrKm();
+        return "The information about the car you get is: " +getRegistrationNumber() + getMake() + getModel() + getNumberOfDoors() + getWhPrKm();
     }
 }

@@ -2,11 +2,12 @@ import java.util.ArrayList;
 
 public class FleetOfCars {
 
-    ArrayList<Car> fleet = new ArrayList<>();
+    static ArrayList<Car> fleet = new ArrayList<>();
 
 
-    public void addCar(Car car){
+    public static void addCar(Car car){
         fleet.add(car);
+        System.out.println(fleet);
 
     }
     public int getTotalRegistrationFeeForFleet(){
@@ -19,6 +20,6 @@ public class FleetOfCars {
 
     @Override
     public String toString(){
-
+        return "the list of the cars in the store is: " + fleet + "and how much the total fee is: " + getTotalRegistrationFeeForFleet();
     }
 }

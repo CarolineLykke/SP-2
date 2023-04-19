@@ -13,7 +13,7 @@ abstract class AFuelCar extends ACar {
     }
 
     @Override
-    public int getRegistrationFee() {
-        return ;
+    public String toString() {
+        return "You can choose a gasoline car or a diesel car";
     }
 }
