@@ -26,6 +26,6 @@ public class GasolinCar extends AFuelCar {
     @Override
     public String toString(){
 
-        return  "The information about the car you get is: " + getMake() + getModel() + getRegistrationNumber() + getNumberOfDoors() + getKmPrLitre();
+        return  "The information about the car you get is: " +getRegistrationNumber() + " "+ getMake() +" "+ getModel() +" "+ getRegistrationNumber() +" "+ getNumberOfDoors() +" "+ getKmPrLitre();
     }
 }
