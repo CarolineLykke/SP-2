@@ -18,8 +18,9 @@ public class ElectricCar extends ACar {
     }
 
     public double getWhPrKm() {
-        int whkm = 169;
-        double a = whkm / 91.25;
+        int whkm = batteryCapacity*1000;
+        int as = whkm/maxRangeKm;
+        double a = as / 91.25;
         return 100 / a;
 
     }
@@ -41,6 +42,6 @@ public class ElectricCar extends ACar {
 
     @Override
     public String toString() {
-        return "The information about the car you get is: " +getRegistrationNumber() + getMake() + getModel() + getNumberOfDoors() + getWhPrKm();
+        return "The information about the car you get is: " + getRegistrationNumber() + getMake() + getModel() + " " + getNumberOfDoors() + " " + getWhPrKm();
     }
 }

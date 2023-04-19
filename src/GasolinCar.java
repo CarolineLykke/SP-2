@@ -4,7 +4,6 @@ public class GasolinCar extends AFuelCar {
         super(registrationNumber, make, model, numberOfDoors, kmPrLitre);
     }
 
-    @Override
     public String getFuelType() {
         return "Gasonlin car";
     }
