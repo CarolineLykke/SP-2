@@ -5,7 +5,7 @@ public class GasolinCar extends AFuelCar {
     }
 
     public String getFuelType() {
-        return "Gasonlin car";
+        return "Gasoline car";
     }
 
     public int getRegistrationFee(){
