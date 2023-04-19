@@ -7,7 +7,6 @@ public class FleetOfCars {
 
     public static void addCar(Car car){
         fleet.add(car);
-        System.out.println(fleet);
 
     }
     public int getTotalRegistrationFeeForFleet(){
@@ -16,10 +15,15 @@ public class FleetOfCars {
             totalFee += car.getRegistrationFee();
         }
         return totalFee;
+
     }
 
     @Override
     public String toString(){
-        return "the list of the cars in the store is: " + fleet + "and how much the total fee is: " + getTotalRegistrationFeeForFleet();
+        String s = "The list of the cars in the store is: " + "\n" ;
+        for (Car car : fleet){
+            s += car.toString() + "\n";
+        }
+            return s;
     }
 }
