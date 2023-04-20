@@ -50,6 +50,6 @@ public class DieselCar extends AFuelCar {
 
     @Override
     public String toString() {
-        return "The information about the car you get is: " + getRegistrationNumber() + " " + getMake() + " "+ getModel() + " " +  getNumberOfDoors()+ " " + getKmPrLitre()+ " " + hasParticleFilter()+ " " + getRegistrationFee();
+        return "A diesel car with the information: " + getRegistrationNumber() + " " + getMake() + " "+ getModel() + " " +  getNumberOfDoors()+ " " + getKmPrLitre()+ " " + hasParticleFilter()+ " -- The registration fee is on: " + getRegistrationFee();
     }
 }

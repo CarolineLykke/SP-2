@@ -31,3 +31,4 @@ abstract class ACar implements Car {
     public String toString() {
         return "";
     }
+}

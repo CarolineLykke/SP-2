@@ -17,11 +17,12 @@ public class ElectricCar extends ACar {
         return maxRangeKm;
     }
 
-    public double getWhPrKm() {
+    public float getWhPrKm() {
         int whkm = batteryCapacity*1000;
         int as = whkm/maxRangeKm;
-        double a = as / 91.25;
-        return 100 / a;
+        float a = (float) (as / 91.25);
+        float total = (float) (100.0/a);
+        return total;
 
     }
 
@@ -35,13 +36,13 @@ public class ElectricCar extends ACar {
             return 2340;
         } else if (whPrKm >= 5 && whPrKm <= 10) {
             return 5500;
-        } else { // kmPerLiter er mindre end 5 // < 5
+        } else { // kmPerLiter is smaller than < 5
             return 10470;
         }
     }
 
     @Override
     public String toString() {
-        return "The information about the car you get is: " + getRegistrationNumber() +" "+ getMake() +" "+ getModel() + " " + getNumberOfDoors() + " " + getWhPrKm();
+        return "An electric car with the information: " + getRegistrationNumber() +" "+ getMake() +" "+ getModel() + " " + getNumberOfDoors() + " " + getWhPrKm() + " -- The registration fee is on: " + getRegistrationFee();
     }
 }
